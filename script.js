@@ -129,4 +129,6 @@ console.log("'7' == 7", '7'==7);
 const stringa1 = prompt("Inserisci la prima stringa");
 const stringa2 = prompt("Inserisci la seconda stringa");
 
-console.log(stringa1 + stringa2);
+// console.log(stringa1 + stringa2);
+
+alert(stringa1 + stringa2);
