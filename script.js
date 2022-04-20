@@ -46,26 +46,53 @@ console.log(true);
 
 // funzione logica NOT
 
-console.log('not true', !true);
+console.log('NOT true', !true);
 
-console.log('not false', !false);
+console.log('NOT false', !false);
 
 // funzione logica AND
 
-console.log('true and true',true&&true);
+console.log('true AND true',true&&true);
 
-console.log('true and false',true&&false);
+console.log('true AND false',true&&false);
 
-console.log('false and true',false&&true);
+console.log('false AND true',false&&true);
 
-console.log('false and false',false&&false);
+console.log('false AND false',false&&false);
 
 // funzione logica OR
 
-console.log('true or false', true||false);
+console.log('true OR true', true||true);
 
-console.log('true or true', true||true);
+console.log('true OR false', true||false);
 
-console.log('false or false', false||false);
+console.log('false OR true', false||true);
 
-console.log('false or true', false||true);
+console.log('false OR false', false||false);
+
+//funzione logica EQUAL
+
+console.log('true EQUAL true', true===true);
+
+console.log('true EQUAL false', true===false);
+
+console.log('false EQUAL true', false===true);
+
+console.log('false EQUAL false', false===false);
+
+// funzione logica EQUAL altre applicazioni
+
+console.log("Pippo EQUAL Pippo", 'Pippo' === 'Pippo');
+
+console.log("Pippo EQUAL Pluto", 'Pippo' === 'Pluto');
+
+console.log("7 EQUAL 7", 7===7);
+
+console.log("8 EQUAL 2", 8===2);
+
+// complicazioni
+
+console.log("'7' === 7", '7' === 7);
+
+console.log("'7' == 7", '7'==7);
+
