@@ -84,12 +84,26 @@ const isDivisibilePerQuattro = numero % 4 === 0;
 // }
 
 
-if (isDivisibilePerDue) {
-    console.log('il numero è divisibile per due')
-}
-if (isDivisibilePerTre) {
-    console.log('il numero è divisibile per tre')
-}
-if (isDivisibilePerQuattro) {
-    console.log('il numero è divisibile per quattro')
+// if (isDivisibilePerDue) {
+//     console.log('il numero è divisibile per due')
+// }
+// if (isDivisibilePerTre) {
+//     console.log('il numero è divisibile per tre')
+// }
+// if (isDivisibilePerQuattro) {
+//     console.log('il numero è divisibile per quattro')
+// }
+
+if (isDivisibilePerDue || isDivisibilePerTre || isDivisibilePerQuattro) {
+    if (isDivisibilePerDue) {
+        console.log('il numero è divisibile per due')
+    }
+    if (isDivisibilePerTre) {
+        console.log('il numero è divisibile per tre')
+    }
+    if (isDivisibilePerQuattro) {
+        console.log('il numero è divisibile per quattro')
+    }
+} else {
+    console.log('il numero non è divisibile per nessuno dei divisori')
 }
