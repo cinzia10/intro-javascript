@@ -28,36 +28,68 @@
 //progetto calcolatrice
 
 
-const operation = prompt("Inserire l'operazione che si vuole eseguire", "puoi inserire: '+', '-', 'x' o ':'");
+// const operation = prompt("Inserire l'operazione che si vuole eseguire", "puoi inserire: '+', '-', 'x' o ':'");
 
-const isSum = operation === '+';
+// const isSum = operation === '+';
 
-const isSub = operation === '-';
+// const isSub = operation === '-';
 
-const isMult = operation === 'x';
+// const isMult = operation === 'x';
 
-const isDiv = operation === ':';
+// const isDiv = operation === ':';
 
-const firstNumberString = prompt("Inserire il primo numero");
+// const firstNumberString = prompt("Inserire il primo numero");
 
-const firstNumber = parseFloat(firstNumberString);
+// const firstNumber = parseFloat(firstNumberString);
 
-const secondNumberString = prompt("Inserire il secondo numero");
+// const secondNumberString = prompt("Inserire il secondo numero");
 
-const secondNumber = parseFloat(secondNumberString);
+// const secondNumber = parseFloat(secondNumberString);
 
-if (isSum) {
-    const result = firstNumber + secondNumber;
-    console.log("Risultato: "+ result)
-} else if (isSub) {
-    const result = firstNumber - secondNumber;
-    console.log("Risultato: "+ result)
-} else if (isMult) {
-    const result = firstNumber * secondNumber;
-    console.log("Risultato: "+ result)
-} else if (isDiv) {
-    const result = firstNumber / secondNumber;
-    console.log("Risultato: "+ result)
-} else {
-    console.log("Operazione non ammessa")
+// if (isSum) {
+//     const result = firstNumber + secondNumber;
+//     console.log("Risultato: "+ result)
+// } else if (isSub) {
+//     const result = firstNumber - secondNumber;
+//     console.log("Risultato: "+ result)
+// } else if (isMult) {
+//     const result = firstNumber * secondNumber;
+//     console.log("Risultato: "+ result)
+// } else if (isDiv) {
+//     const result = firstNumber / secondNumber;
+//     console.log("Risultato: "+ result)
+// } else {
+//     console.log("Operazione non ammessa")
+// }
+
+
+// another project
+
+const numero = 12;
+
+const isDivisibilePerDue = numero % 2 === 0;
+
+const isDivisibilePerTre = numero % 3 === 0;
+
+const isDivisibilePerQuattro = numero % 4 === 0;
+
+// if (isDivisibilePerDue) {
+//     console.log('il numero è divisibile per due')
+// } else if (isDivisibilePerTre) {
+//     console.log('il numero è divisibile per tre')
+// } else if (isDivisibilePerQuattro) {
+//     console.log('il numero è divisibile per quattro')
+// } else {
+//     console.log('il numero non è divisibile per nessuno dei divisori')
+// }
+
+
+if (isDivisibilePerDue) {
+    console.log('il numero è divisibile per due')
+}
+if (isDivisibilePerTre) {
+    console.log('il numero è divisibile per tre')
+}
+if (isDivisibilePerQuattro) {
+    console.log('il numero è divisibile per quattro')
 }
