@@ -94,16 +94,23 @@ const isDivisibilePerQuattro = numero % 4 === 0;
 //     console.log('il numero è divisibile per quattro')
 // }
 
-if (isDivisibilePerDue || isDivisibilePerTre || isDivisibilePerQuattro) {
-    if (isDivisibilePerDue) {
-        console.log('il numero è divisibile per due')
-    }
-    if (isDivisibilePerTre) {
-        console.log('il numero è divisibile per tre')
-    }
-    if (isDivisibilePerQuattro) {
-        console.log('il numero è divisibile per quattro')
-    }
-} else {
-    console.log('il numero non è divisibile per nessuno dei divisori')
-}
+// if (isDivisibilePerDue || isDivisibilePerTre || isDivisibilePerQuattro) {
+//     if (isDivisibilePerDue) {
+//         console.log('il numero è divisibile per due')
+//     }
+//     if (isDivisibilePerTre) {
+//         console.log('il numero è divisibile per tre')
+//     }
+//     if (isDivisibilePerQuattro) {
+//         console.log('il numero è divisibile per quattro')
+//     }
+// } else {
+//     console.log('il numero non è divisibile per nessuno dei divisori')
+// }
+
+
+//chiedo all'utente di inserire un numero
+//se il numero è divisibile per 3, scrivo in console FIZZ
+//se il numero è divisibile per 5, scrivo in console BUZZ
+//se il numero è divisibile per entrambi, scrivo in console FIZZBUZZ
+
