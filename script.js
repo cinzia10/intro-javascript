@@ -100,3 +100,26 @@ console.log("'7' == 7", '7'==7);
  console.log(paperino);
 
  console.log(paperino + pluto);
+
+ pluto = 'mondo';
+
+ console.log(paperino + pluto);
+
+ var paperoga = 12;
+
+ var paperone = 15;
+
+ console.log(paperoga + paperone);
+
+ console.log(paperino + paperoga);
+
+ const topolino = "viva";
+
+ const topolina = "javascript";
+
+ console.log(topolino + topolina);
+
+ //const non può essere riassegnata come let e var
+
+ //topolina = "html";
+ //console.log(topolino + topolina)
