@@ -44,9 +44,13 @@ console.log(false);
 
 console.log(true);
 
+// funzione logica NOT
+
 console.log('not true', !true);
 
 console.log('not false', !false);
+
+// funzione logica AND
 
 console.log('true and true',true&&true);
 
@@ -55,6 +59,8 @@ console.log('true and false',true&&false);
 console.log('false and true',false&&true);
 
 console.log('false and false',false&&false);
+
+// funzione logica OR
 
 console.log('true or false', true||false);
 
