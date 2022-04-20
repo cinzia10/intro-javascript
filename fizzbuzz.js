@@ -10,16 +10,34 @@ const numero= parseFloat(numerostringa)
 const isdiv3 = numero % 3 === 0;
 const isdiv5 = numero % 5 === 0;
 
-if (isdiv3 && isdiv5) {
+
+const isdiv3and5 = numero % 15 === 0;
+
+if (isdiv3and5) {
     console.log("FIZZBUZZ")
     
-}else if (isdiv3 || isdiv5) {
-    if (isdiv3) {
-        console.log("FIZZ")
+} else  if (isdiv3) {
+    console.log("FIZZ")
+} else if (isdiv5) {
+    console.log("BUZZ")
+}
+
+
+
+
+// if (isdiv3 && isdiv5) {
+//     console.log("FIZZBUZZ")
+    
+// }else if (isdiv3 || isdiv5) {
+//     if (isdiv3) {
+//         console.log("FIZZ")
         
-    }
-    if (isdiv5) {
-        console.log("BUZZ")
+//     }
+//     if (isdiv5) {
+//         console.log("BUZZ")
         
-    }
-} 
+//     }
+// } 
+
+
+
