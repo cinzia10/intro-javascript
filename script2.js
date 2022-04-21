@@ -110,3 +110,45 @@ const isDivisibilePerQuattro = numero % 4 === 0;
 
 
 
+const vocaleScelta = prompt('Ciao, scegli una vocale!');
+
+const isA = vocaleScelta === 'a';
+const isE = vocaleScelta === 'e';
+const isI = vocaleScelta === 'i';
+const isO = vocaleScelta === 'o';
+const isU = vocaleScelta === 'u';
+
+// if (isA) {
+//     console.log('A come Alce');
+// } else if (isE) {
+//     console.log('E come Elefante');
+// } else if (isI) {
+//     console.log('I come Istrice');
+// } else if (isO) {
+//     console.log('O come Orso');
+// } else if (isU) {
+//     console.log('U come Upupa');
+// } else {
+//     console.log('Non è una vocale');
+// }
+
+switch (vocaleScelta) {
+    case 'a':
+        console.log('A come Alce');
+        break;
+    case 'e':
+        console.log('E come Elefante');
+        break;
+    case 'i':
+        console.log('I come Istrice');
+        break;
+    case 'o':
+        console.log('O come Orso');
+        break;
+    case 'u':
+        console.log('U come Upupa');
+        break;
+    default:
+        console.log('Non è una vocale');
+        break;
+}
