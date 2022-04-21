@@ -38,7 +38,7 @@ console.log("7" + 7);
 
 console.log(7 + "7");
 
-//boolean
+// boolean
 
 console.log(false);
 console.log(true);
@@ -77,11 +77,40 @@ console.log("Pippo EQUAL Pluto", 'Pippo' === 'Pluto');
 console.log("7 EQUAL 7", 7===7);
 console.log("8 EQUAL 2", 8===2);
 
+// operatore di diversità
+const brontolone = 5;
+
+const puffetta = 8;
+
+const sonoDiversi = !(brontolone === puffetta);
+
+const sonoDiversi2 = brontolone !== puffetta;
+
 // complicazioni
 
 console.log("'7' === 7", '7' === 7);
 
 console.log("'7' == 7", '7'==7);
+
+// undefined
+let grandePuffo;
+
+console.log('log di grande puffo', grandePuffo);
+
+// null
+let quattrocchi = null;
+
+console.log('log di quattrocchi', quattrocchi);
+
+// NaN
+let numeroSbagliato = 'cinque';
+let numero = parseInt(numeroSbagliato)
+
+console.log('log di numero sbagliato', numero);
+
+//infinity
+const infinitoPositivo = +Infinity;
+const infinitoNegativo = -Infinity;
 
 // variabile
 
@@ -125,10 +154,16 @@ console.log("'7' == 7", '7'==7);
  //console.log(topolino + topolina)
 
  
- //progetto
+// progetto
 const stringa1 = prompt("Inserisci la prima stringa");
 const stringa2 = prompt("Inserisci la seconda stringa");
 
 // console.log(stringa1 + stringa2);
 
 alert(stringa1 + stringa2);
+
+
+// camel case
+let laMiaVariabileDiEsempio;
+
+const LA_MIA_IMPORTANTISSIMA_COSTANTE = 3.14;
