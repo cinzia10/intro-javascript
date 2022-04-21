@@ -86,6 +86,15 @@ const sonoDiversi = !(brontolone === puffetta);
 
 const sonoDiversi2 = brontolone !== puffetta;
 
+// operatore di maggioranza e minoranza
+const minore = brontolone < puffetta;
+
+const maggiore = brontolone > puffetta;
+
+const minoreUguale = brontolone <= puffetta;
+
+const maggioreUguale = brontolone >= puffetta;
+
 // complicazioni
 
 console.log("'7' === 7", '7' === 7);
