@@ -1,18 +1,128 @@
-console.log('pippo');
-
-
-
 // TEOREMA DI PITAGORA
 
-const c1t1 = 4;
-const c2t1 = 3;
+// PRIMO TRIANGOLO
+// const c1t1 = 4;
+// const c2t1 = 3;
 
-const c1t1Alla2 = c1t1 ** 2;
-const c2t1Alla2 = c2t1 ** 2;
+// const c1t1Alla2 = c1t1 ** 2;
+// const c2t1Alla2 = c2t1 ** 2;
 
-const sommaQuadrati = c1t1Alla2 + c2t1Alla2;
+// const sumSquare = c1t1Alla2 + c2t1Alla2;
 
-const it1 = Math.sqrt(sommaQuadrati);
+// const it1 = Math.sqrt(sumSquare);
 
 
-console.log(it1)
+// console.log(it1)
+
+// SECONDO TRIANGOLO
+// const c1t2 = 12;
+// const c2t2 = 9;
+
+// const c1t2Alla2 = c1t2 ** 2;
+// const c2t2Alla2 = c2t2 ** 2;
+
+// const sumSquare2 = c1t2Alla2 + c2t2Alla2;
+
+// const it2 = Math.sqrt(sumSquare2);
+
+
+// console.log(it2)
+
+
+// FUNZIONE PER CALCOLARE IL TEOREMA DI PITAGORA
+
+// function calcoloIpotenusa(cateto1, cateto2) {
+//     const cateto1AllaSeconda = cateto1 ** 2;
+//     const cateto2AllaSeconda = cateto2 ** 2;
+//     const sommaDeiQuadrati = cateto1AllaSeconda + cateto2AllaSeconda;
+//     const ipotenusa = Math.sqrt(sommaDeiQuadrati);
+//     return ipotenusa;       
+// }
+
+
+// FUNZIONE PER ESERCIZIO FIZZBUZZ PROMPT E CICLO
+
+// function fizzBuzz(numero) {
+//     const isDivisibilePerTre = numero % 3 === 0;
+//     const isDivisibilePerCinque = numero % 5 === 0;
+//     if (isDivisibilePerTre && isDivisibilePerCinque ) {
+//         console.log('FIZZBUZZ');
+//     } else if (isDivisibilePerTre) {
+//         console.log('FIZZ');
+//     } else if (isDivisibilePerCinque) {
+//         console.log('BUZZ');
+//     }
+// }
+
+// const numeroInStringa = prompt('Inserisci un numero');
+// const numero = parseFloat(numeroInStringa);
+// fizzBuzz(numero);
+
+// for (let i = 0; i < 100; i++) {
+//     fizzBuzz(i);
+// }
+
+
+
+// function fizzBuzz(numero) {
+//     const isDivisibilePerTre = numero % 3 === 0;
+//     const isDivisibilePerCinque = numero % 5 === 0;
+//     if (isDivisibilePerTre && isDivisibilePerCinque ) {
+//         return 'FIZZBUZZ';
+//     } else if (isDivisibilePerTre) {
+//         return 'FIZZ';
+//     } else if (isDivisibilePerCinque) {
+//         return 'BUZZ';
+//     } else {
+//         return '';
+//     }
+// }
+
+// const numeroInStringa = prompt('Inserisci un numero');
+// const numero = parseFloat(numeroInStringa);
+// const result = fizzBuzz(numero);
+// console.log(result);
+
+// for (let i = 0; i < 100; i++) {
+//     const result = fizzBuzz(i);
+//     console.log(result)
+// }
+
+//ESERCITAZIONE
+
+function elaboraDato(dato) {
+    const datoArrotondato = Math.round(dato);
+    const datoArrotondatoAllaSeconda = datoArrotondato ** 2;
+    // let datoDopoSoglia;
+    // if (datoArrotondatoAllaSeconda > 10) {
+    //     datoDopoSoglia = 10;
+    // } else {
+    //     datoDopoSoglia = datoArrotondatoAllaSeconda;
+    // }
+
+    let datoDopoSoglia = controllaSoglia(datoArrotondatoAllaSeconda);
+
+    if (datoDopoSoglia > 5) {
+        return 0;
+    } else {
+        return 1;
+    }
+}
+
+function controllaSoglia(numero) {
+    if (numero > 10) {
+        return 10;
+    } else {
+        return numero;
+    }
+}
+
+const dato1 = 3.4;
+const risultato1 = elaboraDato(dato1)
+
+console.log(risultato1)
+
+const dato2 = 1.5;
+const risultato2 = elaboraDato(dato2)
+
+console.log(risultato2)
