@@ -31,16 +31,50 @@
 // # # # # 
 //  # # # # 
 
+// console.log('# # # #\n # # # #\n# # # #\n # # # #\n# # # #\n # # # #\n# # # #\n # # # #\n')
+
 // const stringaRigaDispari = '# # # # '
 // const stringaRigaPari = ' # # # #'
 
 // for (let riga = 1; riga < 9; riga++) {
-//     if (riga % 2 === 1) {
+//     if (riga % 2 !== 0) {
 //         console.log(stringaRigaDispari)
-//     } else if (riga % 2 === 0){
+//     } else {
 //         console.log(stringaRigaPari)
 //     }
 // }
+
+// for (let r = 0; r < 8; r++) {
+//     let rowString = '';
+//     for (let c = 0; c < 8; c++) {
+//         const isEvenRow = r % 2 === 0;
+//         const isEvenColumn = c % 2 === 0;
+//         if (isEvenRow && isEvenColumn) {
+//             rowString = rowString + '#';
+//         } else if (! isEvenRow && ! isEvenColumn){
+//             rowString = rowString + '#';
+//         } else {
+//             rowString = rowString + ' ';
+//         }
+//     }
+//     console.log(rowString)
+// }
+
+// for (let r = 0; r < 8; r++) {
+//     let rowString = '';
+//     for (let c = 0; c < 8; c++) {
+//         if (r%2===0 && c%2===0) {
+//             rowString = rowString + '#';
+//         } else if (r%2===1 && c%2===1){
+//             rowString = rowString + '#';
+//         } else {
+//             rowString = rowString + ' ';
+//         }
+//     }
+//     console.log(rowString)
+// }
+
+
 
 
 // ESERCIZIO 3
