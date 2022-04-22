@@ -36,7 +36,7 @@
 // const stringaRigaDispari = '# # # # '
 // const stringaRigaPari = ' # # # #'
 
-// for (let riga = 1; riga < 9; riga++) {
+// for (let riga = 0; riga < 8; riga++) {
 //     if (riga % 2 !== 0) {
 //         console.log(stringaRigaDispari)
 //     } else {
@@ -52,6 +52,32 @@
 //         if (isEvenRow && isEvenColumn) {
 //             rowString = rowString + '#';
 //         } else if (! isEvenRow && ! isEvenColumn){
+//             rowString = rowString + '#';
+//         } else {
+//             rowString = rowString + ' ';
+//         }
+//     }
+//     console.log(rowString)
+// }
+
+// for (let r = 0; r < 8; r++) {
+//     let rowString = '';
+//     for (let c = 0; c < 8; c++) {
+//         const sumRowColumn = r + c;
+//         const evenSum = sumRowColumn % 2 === 0;
+//         if (evenSum) {
+//             rowString = rowString + '#';
+//         } else {
+//             rowString = rowString + ' ';
+//         }
+//     }
+//     console.log(rowString)
+// }
+
+// for (let r = 0; r < 8; r++) {
+//     let rowString = '';
+//     for (let c = 0; c < 8; c++) {
+//         if ((r+c)%2===0) {
 //             rowString = rowString + '#';
 //         } else {
 //             rowString = rowString + ' ';
@@ -87,6 +113,12 @@
 // ##### 
 // ######
 
+// console.log('#\n##\n###\n####\n#####\n######\n')
+
+
+
+
+
 // let row = 0;
 
 // let stringRow = '#';
@@ -109,3 +141,4 @@
 //  ####### 
 // #########
 
+// console.log('     #\n    ###\n   #####\n  #######\n #########\n')
