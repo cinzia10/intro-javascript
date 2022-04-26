@@ -86,7 +86,7 @@
 
 // console.log(max(arrayOfNumbers));
 
-const arrayOfNumbers = [1, 5, 3, 8, 6];
+// const arrayOfNumbers = [1, 5, 3, 8, 6];
 
 // function plusOne(array) {
   
@@ -102,16 +102,30 @@ const arrayOfNumbers = [1, 5, 3, 8, 6];
 
 // console.log(plusOne(arrayOfNumbers));
 
-function findEvenNumbers(array){
-    const newArray = [];
+// function findEvenNumbers(array){
+//     const newArray = [];
 
-    for (let i = 0; i < array.length; i++) {
-      const element = array[i];
-      if (element % 2 === 0) {
-       newArray.push(element) 
-      }
-    }
-    return newArray;
-}
+//     for (let i = 0; i < array.length; i++) {
+//       const element = array[i];
+//       if (element % 2 === 0) {
+//        newArray.push(element) 
+//       }
+//     }
+//     return newArray;
+// }
 
-console.log(findEvenNumbers(arrayOfNumbers));
+// console.log(findEvenNumbers(arrayOfNumbers));
+
+
+// function sumAll (array) {
+//   let risultato = 0;
+
+//   for (let i = 0; i < array.length; i++) {
+//     const element = array[i];
+//     risultato = risultato + element;
+//   }
+//   return risultato;
+// }
+
+
+// console.log(sumAll(arrayOfNumbers));
