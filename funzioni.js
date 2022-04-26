@@ -90,39 +90,68 @@
 
 //ESERCITAZIONE
 
-function elaboraDato(dato) {
-    const datoArrotondato = Math.round(dato);
-    const datoArrotondatoAllaSeconda = datoArrotondato ** 2;
-    // let datoDopoSoglia;
-    // if (datoArrotondatoAllaSeconda > 10) {
-    //     datoDopoSoglia = 10;
-    // } else {
-    //     datoDopoSoglia = datoArrotondatoAllaSeconda;
-    // }
+// function elaboraDato(dato) {
+//     const datoArrotondato = Math.round(dato);
+//     const datoArrotondatoAllaSeconda = datoArrotondato ** 2;
+//     // let datoDopoSoglia;
+//     // if (datoArrotondatoAllaSeconda > 10) {
+//     //     datoDopoSoglia = 10;
+//     // } else {
+//     //     datoDopoSoglia = datoArrotondatoAllaSeconda;
+//     // }
 
-    let datoDopoSoglia = controllaSoglia(datoArrotondatoAllaSeconda);
+//     let datoDopoSoglia = controllaSoglia(datoArrotondatoAllaSeconda);
 
-    if (datoDopoSoglia > 5) {
-        return 0;
-    } else {
-        return 1;
-    }
+//     if (datoDopoSoglia > 5) {
+//         return 0;
+//     } else {
+//         return 1;
+//     }
+// }
+
+// function controllaSoglia(numero) {
+//     if (numero > 10) {
+//         return 10;
+//     } else {
+//         return numero;
+//     }
+// }
+
+// const dato1 = 3.4;
+// const risultato1 = elaboraDato(dato1)
+
+// console.log(risultato1)
+
+// const dato2 = 1.5;
+// const risultato2 = elaboraDato(dato2)
+
+// console.log(risultato2)
+
+
+
+function dividi(dividendo, divisore){
+    // console.log('dividendo', dividendo);
+    // console.log('divisore', divisore);
+
+    const quoziente = dividendo / divisore;
+    return quoziente;
 }
 
-function controllaSoglia(numero) {
-    if (numero > 10) {
-        return 10;
-    } else {
-        return numero;
-    }
-}
-
-const dato1 = 3.4;
-const risultato1 = elaboraDato(dato1)
-
-console.log(risultato1)
-
-const dato2 = 1.5;
-const risultato2 = elaboraDato(dato2)
-
+const risultato = dividi(8,2)
+console.log(risultato)
+console.log('----------------------')
+const risultato2 = dividi(8)
 console.log(risultato2)
+
+
+
+// dividi(8, 2);
+// console.log('----------------------')
+// dividi(8)
+// console.log('----------------------')
+// dividi()
+
+
+// let numeroInStringa = '52';
+// let numero = parseInt(numeroInStringa);
+// console.log(numero);
