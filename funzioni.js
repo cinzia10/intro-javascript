@@ -129,21 +129,57 @@
 
 
 
-function dividi(dividendo, divisore){
+// function dividi(dividendo, divisore){
+
     // console.log('dividendo', dividendo);
     // console.log('divisore', divisore);
 
-    const quoziente = dividendo / divisore;
-    return quoziente;
-}
 
-const risultato = dividi(8,2)
-console.log(risultato)
-console.log('----------------------')
-const risultato2 = dividi(8)
-console.log(risultato2)
+    // if (dividendo === undefined) {
+    //      return "mi serve il dividendo";
+    // }
+    // if (divisore === undefined){
+    //       return "mi serve il divisore";
+    // }
+        
+    // if (!dividendo) {
+    //     return "mi serve il dividendo";
+    // }
+    // if (!divisore){
+    //     return "mi serve il divisore";
+    // }
+                
+    // if (!dividendo) {
+    //     return "mi serve il dividendo";
+    // }
+    // if (!divisore){
+    //     divisore = 2;
+    // }
+
+    // const quoziente = dividendo / divisore;
+    // return quoziente;
+// }
 
 
+
+
+// function dividi(dividendo, divisore = 2){
+//     if (!dividendo) {
+//         return "mi serve il dividendo";
+//     }
+
+//     const quoziente = dividendo / divisore;
+//     return quoziente;
+// }
+
+// const risultato = dividi(8,2)
+// console.log('due parametri: ',risultato)
+// console.log('----------------------')
+// const risultato2 = dividi(8)
+// console.log('un parametro: ', risultato2)
+// console.log('----------------------')
+// const risultato3 = dividi()
+// console.log('nessun parametro: ', risultato3)
 
 // dividi(8, 2);
 // console.log('----------------------')
@@ -155,3 +191,35 @@ console.log(risultato2)
 // let numeroInStringa = '52';
 // let numero = parseInt(numeroInStringa);
 // console.log(numero);
+
+
+
+// SINTASSI FUNZIONE STANDARD
+// function aggiungiUno(numero){
+//     return numero + 1;
+// }
+
+// const risultato4 = aggiungiUno(6);
+// console.log(risultato4);
+
+// SINTASSI FUNZIONE ANONIMA
+
+// const aggiungiUnoAnonima = function (numero){
+//     return numero + 1;
+// }
+
+// const risultato5 = aggiungiUnoAnonima(5);
+// console.log(risultato5);
+
+// SINTASSI FUNZIONE LAMBDA
+
+// const aggiungiUnoLambda = (numero) => numero + 1;
+
+// const risultato6 = aggiungiUnoLambda(6);
+// console.log(risultato6);
+
+
+// const dividiLambda = (dividendo, divisore) => {
+//     const quoziente = dividendo / divisore;
+//     return quoziente;
+// }
