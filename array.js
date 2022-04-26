@@ -129,3 +129,34 @@
 
 
 // console.log(sumAll(arrayOfNumbers));
+
+
+
+// FUNZIONE CON CICLO PER TRASFORMARE STRINGHE DA MINUSCOLO A MAIUSCOLO
+// const arrayOfStrings = ['pippo', 'pluto', 'paperino'];
+
+// function arrayToUppercase(array) {
+//   const newArray = [];
+
+//   for (const element of array) {
+//     const uppercaseString = element.toUpperCase();
+//     newArray.push(uppercaseString);
+//   }
+//   return newArray
+// }
+
+// console.log(arrayToUppercase(arrayOfStrings));
+
+// ARRAY DI ARRAY
+
+const arrayOfArray = [[2,6,4],
+                      [8,5,1],
+                      [9,3,6]];
+
+for (let i = 0; i < arrayOfArray.length; i++) {
+  const riga = arrayOfArray[i];
+  for (let j = 0; j < riga.length; j++) {
+    const cella = riga[j];
+    console.log(cella)
+  }
+}
