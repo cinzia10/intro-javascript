@@ -153,10 +153,28 @@ const arrayOfArray = [[2,6,4],
                       [8,5,1],
                       [9,3,6]];
 
-for (let i = 0; i < arrayOfArray.length; i++) {
-  const riga = arrayOfArray[i];
-  for (let j = 0; j < riga.length; j++) {
-    const cella = riga[j];
-    console.log(cella)
+// for (let i = 0; i < arrayOfArray.length; i++) {
+//   const riga = arrayOfArray[i];
+//   for (let j = 0; j < riga.length; j++) {
+//     const cella = riga[j];
+//     console.log(cella)
+//   }
+// }
+
+console.log(arrayOfArray)
+
+function cloneAndAddOneBidimensional(array){
+  const newArray = [];
+  for (const riga of array) {
+    const newRow = [];
+    for (const cella of riga) {
+      const cellPlusOne = cella + 1;
+      newRow.push(cellPlusOne);
+    }
+    newArray.push(newRow);
   }
+  return newArray
 }
+
+console.log(cloneAndAddOneBidimensional(arrayOfArray))
+
