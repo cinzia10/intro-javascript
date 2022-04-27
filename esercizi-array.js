@@ -11,49 +11,54 @@ const testArray3 = [[  1,     4,   8, 12],
 // ESERCIZIO 1
 // function min(array){
 //     let number = array[0];
-//    for (let i= 0; i < array.length; i++) {
+//    for (let i= 1; i < array.length; i++) {
 //        const element = array[i];
 //     if(number > element){
 //         number = element;
 //     }
 //    }
+//     //VERSIONE ALTERNATIVA
+//     // for (const element of array) {
+//     //     if(number > element){
+//     //         number = element;
+//     //     }
+//     // }
 //    return number
- 
 // }
 
-// console.log(min(testArray1))
+// console.log(min(testArray1)) /// risultato: -123
 
 
 // ESERCIZIO 2
 // function sumEven(array) {
-//     let evenNumber = 0;
+//     let result = 0;
 //     for (let i = 0; i < array.length; i++) {
 //         const element = array[i];
 //     if(element % 2 === 0){
-//         evenNumber = evenNumber + element
+//         result = result + element
+//     }
 
 //     }
-        
-//     }
-//     return evenNumber;
+//     return result;
 // }
-//     console.log(sumEven(testArray1))
+    
+// console.log(sumEven(testArray1)) /// risultato: 200008
 
 
 // ESERCIZIO 3
-// function moreThan5Chars(array) {
-//     const wordWithMoreThan5Char = [];
-//     for (let i = 0; i < array.length; i++) {
-//         const element = array[i];
-//         const charsElement = element.length
-//         if (charsElement > 5) {
-//             wordWithMoreThan5Char.push(element)
-//         }
-//     }
-//    return wordWithMoreThan5Char 
-// }
+function moreThan5Chars(array) {
+    const wordWithMoreThan5Chars = [];
+    for (let i = 0; i < array.length; i++) {
+        const element = array[i];
+        const charsElement = element.length
+        if (charsElement > 5) {
+            wordWithMoreThan5Chars.push(element)
+        }
+    }
+   return wordWithMoreThan5Chars 
+}
 
-// console.log(moreThan5Chars(testArray2))//['giallo', 'arancione', 'magenta']
+console.log(moreThan5Chars(testArray2))/// risultato: ['giallo', 'arancione', 'magenta']
 
 
 // ESERCIZIO 4
