@@ -149,9 +149,9 @@
 
 // ARRAY DI ARRAY
 
-const arrayOfArray = [[2,6,4],
-                      [8,5,1],
-                      [9,3,6]];
+// const arrayOfArray = [[2,6,4],
+//                       [8,5,1],
+//                       [9,3,6]];
 
 // for (let i = 0; i < arrayOfArray.length; i++) {
 //   const riga = arrayOfArray[i];
@@ -161,20 +161,106 @@ const arrayOfArray = [[2,6,4],
 //   }
 // }
 
-console.log(arrayOfArray)
+// console.log(arrayOfArray)
 
-function cloneAndAddOneBidimensional(array){
+// function cloneAndAddOneBidimensional(array){
+//   const newArray = [];
+//   for (const riga of array) {
+//     const newRow = [];
+//     for (const cella of riga) {
+//       const cellPlusOne = cella + 1;
+//       newRow.push(cellPlusOne);
+//     }
+//     newArray.push(newRow);
+//   }
+//   return newArray
+// }
+
+// console.log(cloneAndAddOneBidimensional(arrayOfArray))
+
+
+
+// FUNZIONI DI FILTRAGGIO - FILTERING
+
+const testArray = [2, 6, 8, 7, 21, 2001, 5000, 3, 12];
+
+// function keepEven(array) {
+  
+// const newArray = [];
+
+// for (let i = 0; i < array.length; i++) {
+//   const element = array[i];
+  
+//   const isElementEven = element % 2 === 0;
+
+//   if (isElementEven) {
+//     newArray.push(element)
+//   }
+// }
+// return newArray
+// }
+
+
+// function keepGreaterThan10(array) {
+//   const newArray = [];
+
+// for (let i = 0; i < array.length; i++) {
+//   const element = array[i];
+  
+//   const isElementGreaterThan = element > 10;
+
+//   if (isElementGreaterThan) {
+//     newArray.push(element)
+//   }
+// }
+// return newArray
+// }
+
+
+function filter (array, filterFunction){
   const newArray = [];
-  for (const riga of array) {
-    const newRow = [];
-    for (const cella of riga) {
-      const cellPlusOne = cella + 1;
-      newRow.push(cellPlusOne);
+  for (let i = 0; i < array.length; i++) {
+    const element = array[i];
+    const isElementToAdd = filterFunction(element);
+    if (isElementToAdd) {
+      newArray.push(element)
     }
-    newArray.push(newRow);
   }
   return newArray
 }
 
-console.log(cloneAndAddOneBidimensional(arrayOfArray))
 
+
+
+// function isEven(number){
+//   if (number % 2 === 0){
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// function isEven(number) {
+//   return number % 2 === 0;
+// }
+
+// function isGreaterThan10(number){
+//   return number>10;
+// }
+
+// function isSmallerThan10(number){
+//   return number<10;
+// }
+
+// console.log(filter(testArray, isSmallerThan10))
+
+// console.log(filter(testArray,isGreaterThan10))
+
+// console.log(filter(testArray, isEven))
+
+
+// console.log(testArray.filter(isEven));
+// console.log(testArray.filter(isGreaterThan10));
+// console.log(testArray.filter(isSmallerThan10));
+
+console.log(filter(testArray, (number)=>number%2!==0))
