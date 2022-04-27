@@ -46,26 +46,46 @@ const testArray3 = [[  1,     4,   8, 12],
 
 
 // ESERCIZIO 3
-function moreThan5Chars(array) {
-    const wordWithMoreThan5Chars = [];
-    for (let i = 0; i < array.length; i++) {
-        const element = array[i];
-        const charsElement = element.length
-        if (charsElement > 5) {
-            wordWithMoreThan5Chars.push(element)
-        }
-    }
-   return wordWithMoreThan5Chars 
-}
+// function moreThan5Chars(array) {
+//     const wordWithMoreThan5Chars = [];
+//     for (let i = 0; i < array.length; i++) {
+//         const element = array[i];
+//         const charsElement = element.length
+//         if (charsElement > 5) {
+//             wordWithMoreThan5Chars.push(element)
+//         }
+//     }
 
-console.log(moreThan5Chars(testArray2))/// risultato: ['giallo', 'arancione', 'magenta']
+//     // // VERSIONE ALTERNATIVA
+//     // for (const element of array) {
+//     //     if (element.length > 5) {
+//     //         wordWithMoreThan5Chars.push(element)
+//     //     }
+//     // }
+//    return wordWithMoreThan5Chars 
+// }
+
+// console.log(moreThan5Chars(testArray2))/// risultato: ['giallo', 'arancione', 'magenta']
 
 
 // ESERCIZIO 4
 // function firstUpperCase(array) {
-//     return array.map(element => {
-//         return element.charAt(0).toUpperCase() + element.substring(1).toLowerCase();
-//       });
+//         const newArray = [];
+//         for (let i = 0; i < array.length; i++) {
+//             const element = array[i];
+//             const firstChar = element[0];
+//             const firstCharUpper = firstChar.toUpperCase();
+//             const remainingElement = element.substring(1);
+//             const upperCaseElement = firstCharUpper + remainingElement;
+//             newArray.push(upperCaseElement)
+//         }
+
+//         return newArray
+
+//         //VERSIONE TROVATA SU INTERNET
+// //     return array.map(element => {
+// //         return element.charAt(0).toUpperCase() + element.substring(1).toLowerCase();
+// //       });
     
 // }
 //     console.log(firstUpperCase(testArray2))
