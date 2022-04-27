@@ -172,3 +172,24 @@ const testArray3 = [[  1,     4,   8, 12],
 // }
 
 // console.log(flatArray(testArray3)) /// [1, 4, 8, 12, 34, 2.1, -23, 4, 1.1, -2000, 2, 88]
+
+
+
+
+
+function sumAll (array) {
+  let risultato = 0;
+
+  for (let i = 0; i < array.length; i++) {
+    const element = array[i];
+    risultato = risultato + element;
+  }
+  return risultato;
+}
+
+function flattenArray(array) {
+    const flattenArray = array.flat()
+    return flattenArray
+}
+
+console.log(sumAll(testArray3.flat()))
