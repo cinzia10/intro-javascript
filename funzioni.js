@@ -218,8 +218,57 @@
 // const risultato6 = aggiungiUnoLambda(6);
 // console.log(risultato6);
 
-
 // const dividiLambda = (dividendo, divisore) => {
 //     const quoziente = dividendo / divisore;
 //     return quoziente;
 // }
+
+
+// SINTASSI FUNZIONE DI ORDINE SUPERIORE
+
+function sum(number1, numeber2) {
+    return number1+numeber2;
+}
+function sub(number1, numeber2) {
+    return number1-numeber2;
+}
+function mult(number1, numeber2) {
+    return number1*numeber2;
+}
+function div(number1, numeber2) {
+    return number1/numeber2;
+}
+
+function eseguiOperazione(numero1, numero2, operazione) {
+    return operazione(numero1, numero2);
+}
+console.log(eseguiOperazione(5,3,sub))
+
+
+
+function resto(number1, number2) {
+    return number1 % number2
+}
+
+const restoLambda = (n1, n2) => n1%n2;
+
+console.log(eseguiOperazione(9,4, (n1,n2)=>n1%n2))
+
+
+
+
+function somma1(numero) {
+    return numero+1;
+}
+
+function somma2(numero) {
+    return numero+2;
+}
+
+function generaSomma(numeroDaSommare) {
+    return (numero) => numero + numeroDaSommare;
+}
+
+const sommaTre = generaSomma(3);
+
+console.log(sommaTre(5))
