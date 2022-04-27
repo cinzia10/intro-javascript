@@ -182,7 +182,7 @@
 
 // FUNZIONI DI FILTRAGGIO - FILTERING
 
-const testArray = [2, 6, 8, 7, 21, 2001, 5000, 3, 12];
+// const testArray = [2, 6, 8, 7, 21, 2001, 5000, 3, 12];
 
 // function keepEven(array) {
   
@@ -217,17 +217,17 @@ const testArray = [2, 6, 8, 7, 21, 2001, 5000, 3, 12];
 // }
 
 
-function filter (array, filterFunction){
-  const newArray = [];
-  for (let i = 0; i < array.length; i++) {
-    const element = array[i];
-    const isElementToAdd = filterFunction(element);
-    if (isElementToAdd) {
-      newArray.push(element)
-    }
-  }
-  return newArray
-}
+// function filter (array, filterFunction){
+//   const newArray = [];
+//   for (let i = 0; i < array.length; i++) {
+//     const element = array[i];
+//     const isElementToAdd = filterFunction(element);
+//     if (isElementToAdd) {
+//       newArray.push(element)
+//     }
+//   }
+//   return newArray
+// }
 
 
 
@@ -252,15 +252,57 @@ function filter (array, filterFunction){
 //   return number<10;
 // }
 
-// console.log(filter(testArray, isSmallerThan10))
+// console.log(filter(testArray, isSmallerThan10));
 
-// console.log(filter(testArray,isGreaterThan10))
+// console.log(filter(testArray,isGreaterThan10));
 
-// console.log(filter(testArray, isEven))
+// console.log(filter(testArray, isEven));
 
+// console.log(filter(testArray, (number)=>number%2!==0));
+
+// FILTERING DI JAVASCRIPT
 
 // console.log(testArray.filter(isEven));
 // console.log(testArray.filter(isGreaterThan10));
 // console.log(testArray.filter(isSmallerThan10));
+// console.log(testArray.filter((number)=>number%2!==0));
 
-console.log(filter(testArray, (number)=>number%2!==0))
+
+
+
+// MAPPING
+
+const testArray = [2, 6, 8, 7, 21, 2001, 5000, 3, 12];
+
+// function addOnToAllElements(array) {
+//   const newArray =[];
+//   for (let i = 0; i < array.length; i++) {
+//     // const element = array[i]+1;
+//     // newArray.push(element);
+//     const element = array[i];
+//     const newElement = element + 1;
+//     newArray.push(newElement);
+//   }
+//   return newArray;
+// }
+
+// console.log(addOnToAllElements(testArray))
+
+function map(array, mappingFunction){
+  const newArray =[];
+  for (let i = 0; i < array.length; i++) {
+    const element = array[i];
+    const newElement = mappingFunction(element);
+    newArray.push(newElement);
+  }
+  return newArray;
+}
+
+
+function addOne(element){
+  return element+1;
+}
+
+console.log(map(testArray,addOne))
+
+console.log(testArray.map((number)=>number+3))
