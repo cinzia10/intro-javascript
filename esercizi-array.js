@@ -163,8 +163,8 @@ const testArray3 = [[  1,     4,   8, 12],
 // ESERCIZIO 9
 // function flatArray(array) {
 //     const flatArray = [];
-//     for (const riga of array) {
-//         for (const element of riga) {
+//     for (const row of array) {
+//         for (const element of row) {
 //             flatArray.push(element)
 //         }
 //     }
