@@ -177,19 +177,19 @@ const testArray3 = [[  1,     4,   8, 12],
 
 
 
-function sumAll (array) {
-  let risultato = 0;
+// function sumAll (array) {
+//   let risultato = 0;
 
-  for (let i = 0; i < array.length; i++) {
-    const element = array[i];
-    risultato = risultato + element;
-  }
-  return risultato;
-}
+//   for (let i = 0; i < array.length; i++) {
+//     const element = array[i];
+//     risultato = risultato + element;
+//   }
+//   return risultato;
+// }
 
-function flattenArray(array) {
-    const flattenArray = array.flat()
-    return flattenArray
-}
+// function flattenArray(array) {
+//     const flattenArray = array.flat()
+//     return flattenArray
+// }
 
-console.log(sumAll(testArray3.flat()))
+// console.log(sumAll(testArray3.flat()))
