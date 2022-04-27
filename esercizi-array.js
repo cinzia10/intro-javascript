@@ -126,25 +126,33 @@ const testArray3 = [[  1,     4,   8, 12],
 
 
 // ESERCIZIO 7
-function filterByMax(array, max) {
-    const maxCloneArray = [];
+// function filterByMax(array, max) {
+//     const maxCloneArray = [];
 
-    for (let i = 0; i < array.length; i++) {
-        const element = array[i];
-        if (element < max) {
-            maxCloneArray.push(element);
-        }
-    }
-    return maxCloneArray
-}
+//     for (let i = 0; i < array.length; i++) {
+//         const element = array[i];
+//         if (element < max) {
+//             maxCloneArray.push(element);
+//         }
+//     }
+//     return maxCloneArray
+// }
 
-console.log(filterByMax(testArray1, 10)) /// clone con tutti i valori minori di 10
+// console.log(filterByMax(testArray1, 10)) /// clone con tutti i valori minori di 10
 
 
 // ESERCIZIO 8
 // function reverse(array) {
-//     array.reverse();
-//     return array;
+//     // const newArray = array;
+//     // newArray.reverse();
+//     // return newArray;
+
+//     // newArray = [];
+//     // for (let i = array.lenght; i < 0; i--) {
+//     //     const element = array[i];
+//     //     newArray.push(element);
+//     // }
+//     // return newArray;
 // }
 
 
