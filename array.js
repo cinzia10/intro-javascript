@@ -180,7 +180,7 @@
 
 
 
-// FUNZIONI DI FILTRAGGIO - FILTERING
+// FILTERING (APPLICA UNA FUNZIONE DI FILTRAGGIO ALL'INTERNO DELL'ARRAY)
 
 // const testArray = [2, 6, 8, 7, 21, 2001, 5000, 3, 12];
 
@@ -270,7 +270,7 @@
 
 
 
-// MAPPING
+// MAPPING (MODIFICA I SINGOLI ELEMENTI PRESENTI ALL'INTERNO DELL'ARRAY)
 
 const testArray = [2, 6, 8, 7, 21, 2001, 5000, 3, 12];
 
@@ -288,21 +288,23 @@ const testArray = [2, 6, 8, 7, 21, 2001, 5000, 3, 12];
 
 // console.log(addOnToAllElements(testArray))
 
-function map(array, mappingFunction){
-  const newArray =[];
-  for (let i = 0; i < array.length; i++) {
-    const element = array[i];
-    const newElement = mappingFunction(element);
-    newArray.push(newElement);
-  }
-  return newArray;
-}
+// function map(array, mappingFunction){
+//   const newArray =[];
+//   for (let i = 0; i < array.length; i++) {
+//     const element = array[i];
+//     const newElement = mappingFunction(element);
+//     newArray.push(newElement);
+//   }
+//   return newArray;
+// }
 
 
-function addOne(element){
-  return element+1;
-}
+// function addOne(element){
+//   return element+1;
+// }
 
-console.log(map(testArray,addOne))
+// console.log(map(testArray,addOne));
+// console.log(map(testArray,(element)=>element**2))
 
-console.log(testArray.map((number)=>number+3))
+// console.log(testArray.map(addOne));
+// console.log(testArray.map((element)=>element**2));
