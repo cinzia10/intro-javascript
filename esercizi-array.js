@@ -88,37 +88,37 @@ const testArray3 = [[  1,     4,   8, 12],
 // //       });
     
 // }
-//     console.log(firstUpperCase(testArray2))
+//     console.log(firstUpperCase(testArray2)) /// risultato: ['Rosso', 'Verde', 'Giallo', 'Arancione', 'Magenta', 'Blu']
 
 
 // ESERCIZIO 5
 // function superSumAll(array) {
-//     let sum = 0;
+//     let result = 0;
 //     for (let i = 0; i < array.length; i++) {
 //         const element = array[i];
 //         for (let j = 0; j < element.length; j++) {
 //             const number = element[j];
-//             sum = number + sum;
+//             result = number + result;
 //         }
 //     }
-//     return sum
+//     return result
 // }
 
-// console.log(superSumAll(testArray3))
+// console.log(superSumAll(testArray3)) /// risultato: -1866.8
 
 
 // ESERCIZIO 6
 // function divide(array, divider) {
-//     const cloneTestArray1 = [];
+//     const newArray = [];
 //     for (let i = 0; i < array.length; i++) {
 //         const element = array[i];
 //         if (divider) {
-//             cloneTestArray1.push(element/divider);
+//             newArray.push(element/divider);
 //         } else {
-//             cloneTestArray1.push(element/2)
+//             newArray.push(element/2)
 //         }
 //     }
-//     return cloneTestArray1
+//     return newArray
 // }
 
 // console.log(divide(testArray1, 3))/// clone con tutti i valori diviso 3
@@ -126,19 +126,19 @@ const testArray3 = [[  1,     4,   8, 12],
 
 
 // ESERCIZIO 7
-// function filterByMax(array, max) {
-//     const maxCloneArray = [];
+function filterByMax(array, max) {
+    const maxCloneArray = [];
 
-//     for (let i = 0; i < array.length; i++) {
-//         const element = array[i];
-//         if (element < max) {
-//             maxCloneArray.push(element);
-//         }
-//     }
-//     return maxCloneArray
-// }
+    for (let i = 0; i < array.length; i++) {
+        const element = array[i];
+        if (element < max) {
+            maxCloneArray.push(element);
+        }
+    }
+    return maxCloneArray
+}
 
-// console.log(filterByMax(testArray1, 10))/// clone con tutti i valori minore di 10
+console.log(filterByMax(testArray1, 10)) /// clone con tutti i valori minori di 10
 
 
 // ESERCIZIO 8
