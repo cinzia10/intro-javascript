@@ -101,7 +101,7 @@ const testArray3 = [[1, 4, 8, 12],
 
 //     for (let i = 0; i < array.length; i++) {
 //         const element = array[i];
-//         if (element > 10) {
+//         if (element < max) {
 //             maxCloneArray.push(element);
 //         }
 //     }
