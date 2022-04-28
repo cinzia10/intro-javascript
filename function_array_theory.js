@@ -292,7 +292,7 @@
 
 /// mappare testArray in modo che ad ogni elemento venga sommato (se esiste) il successivo
 
-// const testArray = [2, 4, 7, -9, 1000, 45, 2, 12, 333, -1000, 123, 34];
+const testArray = [2, 4, 7, -9, 1000, 45, 2, 12, 333, -1000, 123, 34];
 
 // function addNext(element, index, array) {
 //     const nextIndex = index + 1;
@@ -325,3 +325,83 @@
 
 
 
+// REDUCING - 
+
+// function sumAll(array) {
+//     let result = 0;
+//     for (const element of array) {
+//         result= result+element
+//     }
+//     return result
+// }
+
+// console.log(sumAll(testArray))
+
+
+
+// function multiplyAll (array){
+//     let result= 1;
+//     for (const element of array) {
+//         result= result * element;
+//     }
+//     return result
+// }
+
+// console.log(multiplyAll(testArray))
+
+
+
+// function reducerSumAll (previous, current){
+//     const result = previous + current
+//     return result
+// }
+
+// function reducerMultiplyAll (previous, current){
+//     const result = previous * current;
+//     return result
+// }
+
+// console.log(testArray.reduce(reducerSumAll, 0));
+// console.log(testArray.reduce(reducerMultiplyAll, 1));
+
+// console.log(testArray.reduce(reducerSumAll));
+// console.log(testArray.reduce(reducerMultiplyAll));
+
+// console.log(testArray.reduce((p,c)=>p+c, 0))
+// console.log(testArray.reduce((p,c)=>p*c, 1))
+
+// console.log(testArray.reduce((p,c)=>p+c))
+// console.log(testArray.reduce((p,c)=>p*c))
+
+
+const test = [3, 1, 5];
+
+
+
+
+function reduceHigherThan2(previous, current) {
+    if (current>2) {
+        previous.push(current)
+    }
+    return previous
+}
+
+console.log(test.reduce(reduceHigherThan2, []));
+
+console.log(test.filter((e)=>e>2));
+
+
+
+
+function sumOnlyPairIndex (previous, current, index){
+    if(index%2===0){
+        const result = previous+current;
+        return result
+    } else {
+        return previous
+    }
+}
+
+console.log(test.reduce(sumOnlyPairIndex, 0));
+
+console.log(test.reduce((p,c,i)=>i%2===0?p+c:p, 0));
