@@ -312,7 +312,7 @@
 
 
 
-// SORTING
+// SORTING (RIORDINA GLI ELEMENTI IN ORDINE ALFABETICO, ANCHE I NUMERI, PER CUI E' IMPORTANTE UTILIZZARE UNA FUNZIONE DI CONTROLLO PER RIORDINARE I NUMERI)
 const testArray = [2, 6, 8, 7, 21, 2001, 5000, 3, 12];
 
 function sortNumbers(el1, el2){
@@ -325,19 +325,31 @@ function sortNumbers(el1, el2){
     }
 }
 
+// FUNZIONE DI CONTROLLO PER FUNZIONE SORTING (NUMERO)
+function sortNumbers2 (el1, el2){
+    return el1 - el2;
+}
 
-
-
-
-testArray.sort(sortNumbers);
+testArray.sort(sortNumbers2);
 
 console.log(testArray);
 
 
 
+// FUNZIONE DI CONTROLLO PER FUNZIONE SORTING (STRINGA)
+// PER LETTERA INIZIALE
+function sortString(el1, el2){
+    return el1.localeCompare(el2);
+}
+
+// PER LUNGHEZZA DI STRINGA (NUMERO DELLE LETTERE)
+function compareStringByLength(el1, el2) {
+    return el1.length - el2.length;
+}
+
 const arrayOfString = ['balcone', 'aritmetica', 'giallo', 'zuzzurellone'];
 
-arrayOfString.sort();
+arrayOfString.sort(compareStringByLength);
 
 console.log(arrayOfString);
 
