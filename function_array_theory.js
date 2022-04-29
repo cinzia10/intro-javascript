@@ -405,3 +405,10 @@ function sumOnlyPairIndex (previous, current, index){
 console.log(test.reduce(sumOnlyPairIndex, 0));
 
 console.log(test.reduce((p,c,i)=>i%2===0?p+c:p, 0));
+
+
+
+
+
+// SORTING
+

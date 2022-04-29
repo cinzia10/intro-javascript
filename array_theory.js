@@ -272,7 +272,7 @@
 
 // MAPPING (MODIFICA I SINGOLI ELEMENTI PRESENTI ALL'INTERNO DELL'ARRAY)
 
-const testArray = [2, 6, 8, 7, 21, 2001, 5000, 3, 12];
+// const testArray = [2, 6, 8, 7, 21, 2001, 5000, 3, 12];
 
 // function addOnToAllElements(array) {
 //   const newArray =[];
@@ -308,5 +308,38 @@ const testArray = [2, 6, 8, 7, 21, 2001, 5000, 3, 12];
 
 // console.log(testArray.map(addOne));
 // console.log(testArray.map((element)=>element**2));
+
+
+
+
+// SORTING
+const testArray = [2, 6, 8, 7, 21, 2001, 5000, 3, 12];
+
+function sortNumbers(el1, el2){
+    if (el1 > el2) {
+        return 1;
+    } else if (el1 < el2) {
+        return -1;
+    } else {
+        return 0;
+    }
+}
+
+
+
+
+
+testArray.sort(sortNumbers);
+
+console.log(testArray);
+
+
+
+const arrayOfString = ['balcone', 'aritmetica', 'giallo', 'zuzzurellone'];
+
+arrayOfString.sort();
+
+console.log(arrayOfString);
+
 
 
