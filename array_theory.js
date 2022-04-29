@@ -335,6 +335,7 @@ testArray.sort(sortNumbers2);
 console.log(testArray);
 
 
+const arrayOfString = ['balcone', 'aritmetica', 'giallo', 'zuzzurellone'];
 
 // FUNZIONE DI CONTROLLO PER FUNZIONE SORTING (STRINGA)
 // PER LETTERA INIZIALE
@@ -346,8 +347,6 @@ function sortString(el1, el2){
 function compareStringByLength(el1, el2) {
     return el1.length - el2.length;
 }
-
-const arrayOfString = ['balcone', 'aritmetica', 'giallo', 'zuzzurellone'];
 
 arrayOfString.sort(compareStringByLength);
 
