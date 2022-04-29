@@ -351,6 +351,3 @@ function compareStringByLength(el1, el2) {
 arrayOfString.sort(compareStringByLength);
 
 console.log(arrayOfString);
-
-
-
