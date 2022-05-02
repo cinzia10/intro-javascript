@@ -4,14 +4,10 @@ const course1 = {
     ended: false
 }
 
-
-
-
-
 const student1 = {
     name: 'Cinzia',
     surname: 'Ariotti',
-    year: 1996,
+    age: 25,
     luogo: 'Genova',
     married: false,
     course: course1,
@@ -22,7 +18,7 @@ const student1 = {
 const student2 = {
     name: 'Polina',
     surname: 'Boretc',
-    year: 1997,
+    age: 27,
     luogo: 'Chelyaddnsk',
     married: false,
     course: course1,
@@ -33,7 +29,7 @@ const student2 = {
 const student3 = {
     name: 'Giovanni',
     surname: 'Cambiaso',
-    year: 1997,
+    age: 24,
     luogo: 'Genova',
     married: false,
     course: course1,
@@ -43,7 +39,7 @@ const student3 = {
 const student4 = {
     name: 'Mattia',
     surname: 'Della Mutta',
-    year: 1997,
+    age: 24,
     luogo: 'Genova',
     married: false,
     course: course1,
@@ -53,7 +49,7 @@ const student4 = {
 const student5 = {
     name: 'Mirco',
     surname: 'Faro',
-    year: 1993,
+    age: 28,
     luogo: 'Santa Margherita Ligure',
     married: false,
     course: course1,
@@ -63,7 +59,7 @@ const student5 = {
 const student6 = {
     name: 'Paolo',
     surname: 'Foppiano',
-    year: 1997,
+    age: 24,
     luogo: 'Genova',
     married: false,
     course: course1,
@@ -73,9 +69,9 @@ const student6 = {
 const student7 = {
     name: 'Leslie',
     surname: 'Fritas',
-    year: 1995,
+    age: 27,
     luogo: 'Lima',
-    married: false,
+    married: true,
     course: course1,
     vote: [5,6,8],
     genere: 'F'
@@ -83,7 +79,7 @@ const student7 = {
 const student8 = {
     name: 'Christopher',
     surname: 'Limone',
-    year: 1994,
+    age: 27,
     luogo: 'Genova',
     married: false,
     course: course1,
@@ -93,7 +89,7 @@ const student8 = {
 const student9 = {
     name: 'Artem',
     surname: 'Sangiorgio',
-    year: 1997,
+    age: 24,
     luogo: 'San Pietroburgo',
     married: false,
     course: course1,
@@ -103,7 +99,7 @@ const student9 = {
 const student10 = {
     name: 'Jessica',
     surname: 'Vitanza',
-    year: 1997,
+    age: 24,
     luogo: 'Trapani',
     married: false,
     course: course1,
@@ -111,16 +107,85 @@ const student10 = {
     genere: 'F'
 }
 
-const studenti = [student1, student2, student3, student4, student5, student6, student7, student8, student9, student10]
+const students = [student1, student2, student3, student4, student5, student6, student7, student8, student9, student10]
 
-for (let i = 0; i < studenti.length; i++) {
-    const studente = studenti[i];
-    console.log(studente.name+' '+studente.year);
+
+
+
+function printStudent (studentsArray){
+    for (let i = 0; i < studentsArray.length; i++) {
+    const studente = studentsArray[i];
+    console.log(studente.name+' '+studente.surname);
+    console.log('Anno di nascita: '+studente.year);
+    console.log('Luogo di nascita: '+studente.luogo);
+    console.log('---------------------------------');
+    console.log(' ');
+}}
+
+
+printStudent(students)
+
+
+// // function isFemale(student){
+// //     // if (student.genere === 'F'){
+// //     //     return true
+// //     // } else {
+// //     //     return false
+// //     // }
+
+// //     return student.genere === 'F'
+// // }
+
+function printFemaleStudents (studentsArray){
+//     for (let i = 0; i < studentsArray.length; i++) {
+//     const studente = studentsArray[i];
+//     console.log(studente.name+' '+studente.surname);
+//     console.log('Anno di nascita: '+studente.year);
+//     console.log('Luogo di nascita: '+studente.luogo);
+//     console.log('---------------------------------');
+//     console.log(' ');
+// }
+
+// const femaleStudent = studentsArray.filter(isFemale)
+
+const femaleStudents = studentsArray.filter((s)=>s.genere==='F')
+
+printStudent(femaleStudents);
+
 }
 
-for (let i = 0; i < studenti.length; i++) {
-    const student = studenti[i];
-    if (student.genere === 'F') {
-        console.log(student.name+' '+student.surname);
+
+
+/// FUNZIONE FILTRO CON ARRAY DI OBJECT
+function printSingleStudent(student){
+    console.log(student.name+' '+student.surname);
+    console.log('Età: '+student.age);
+    console.log('Luogo di nascita: '+student.luogo);
+    console.log('---------------------------------');
+    console.log(' ');
+}
+
+
+function printOldestStudent (studentArray){
+    let oldest = studentArray[0]
+    for (const student of studentArray) {
+        if (student.age > oldest.age) {
+            oldest = student;
+        }
+    }
+    printSingleStudent(oldest)
+}
+
+
+printOldestStudent(students)
+
+
+function reduceOldest(previous, current){
+    if (previous.age < current.age){
+        return current;
+    } else {
+        return previous;
     }
 }
+
+console.log(students.reduce((p,c)=>p.age<c.age?p:c))

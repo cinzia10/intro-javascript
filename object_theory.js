@@ -69,7 +69,6 @@ const course1 = {
     hour: 300,
     ended: false
 }
-
 const student1 = {
     name: 'Christopher',
     surname: 'Limone',
@@ -80,7 +79,6 @@ const student1 = {
     vote: [5,7,5],
     genere: 'M'
 }
-
 const student2 = {
     name: 'Polina',
     surname: 'Boretc',
@@ -91,7 +89,6 @@ const student2 = {
     vote: [7,8,3],
     genere: 'F'
 }
-
 const student3 = {
     name: 'Cinzia',
     surname: 'Ariotti',
@@ -112,7 +109,6 @@ const student4 = {
     vote: [5,6,8],
     genere: 'F'
 }
-
 const student5 = {
     name: 'Mirco',
     surname: 'Faro',
@@ -135,7 +131,6 @@ const student6 = {
 }
 
 
-
 const students = [student1, student2, student3, student4, student5, student6];
 
 
@@ -148,14 +143,15 @@ const students = [student1, student2, student3, student4, student5, student6];
 // printStudent(students)
 
 
-// // FUNZIONE DI COMPARAZIONE DELL'ETA' DEGLI STUDENTI
-// function compareStudentsByAge (el1, el2){
-//     return el1.age-el2.age;
-// }
+// FUNZIONE DI COMPARAZIONE DELL'ETA' DEGLI STUDENTI
+function compareStudentsByAge (el1, el2){
+    return el1.age-el2.age;
+}
 
-// students.sort(compareStudentsByAge)
+students.sort(compareStudentsByAge)
 // printStudent(students)
 
+console.log(JSON.stringify(students))
 
 // //FUNZIONE DI COMPARAZIONE DI ETA' E COGNOME (QUANDO L'ETA' E' UGUALE, SI COMPARANO I COGNOMI)
 // function compareStudentByAgeAndSurname (el1, el2){
@@ -169,3 +165,6 @@ const students = [student1, student2, student3, student4, student5, student6];
 
 // students.sort(compareStudentByAgeAndSurname);
 // printStudent(students)
+
+
+
